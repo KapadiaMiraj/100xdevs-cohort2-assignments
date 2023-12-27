@@ -9,7 +9,11 @@ function dateMethods() {
   console.log("Hours:", currentDate.getHours());
   console.log("Minutes:", currentDate.getMinutes());
   console.log("Seconds:", currentDate.getSeconds());
-
+  console.log("Milliseconds:", currentDate.getMilliseconds());
+  
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  console.log("Day of the week:", days[currentDate.getDay()]);
+  
   // Setting components of the date
   currentDate.setFullYear(2022);
   console.log("After setFullYear:", currentDate);
