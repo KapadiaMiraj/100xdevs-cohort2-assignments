@@ -103,3 +103,38 @@ function sortExample(arr) {
   console.log("After sort:", arr);
 }
 sortExample([5, 2, 3, 4, 1]);
+
+// slice()
+function sliceExample(arr, start, end) {
+  console.log("Original Array:", arr);
+
+  let newArr = arr.slice(start, end);
+  console.log("After slice:", newArr);
+}
+sliceExample([1, 2, 3, 4, 5], 1, 3);
+
+// reduce()
+function reduceExample(arr) {
+  console.log("Original Array:", arr);
+
+  let sum = arr.reduce(function(a, b) {
+    return a + b;
+  }, -5);
+  console.log("After reduce:", sum);
+}
+reduceExample([1, 2, 3, 4, 5]);
+
+// splice()
+function spliceExample(arr, index) {
+  console.log("Original Array:", arr);
+
+  arr.splice(index, 2);
+  console.log("After splice:", arr);
+  
+  arr.splice(index, 2, 3, 4, 5, 6, 7);
+  console.log("After splice:", arr);
+
+  arr.splice(index)
+  console.log("After splice:", arr);
+}
+spliceExample([1, 2, 3, 4, 5], 2);
